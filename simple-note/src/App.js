@@ -15,12 +15,14 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" element={<NotesPage />} />
-          <Route path="/note/:id" element={<NotePage />} />
-        </Routes>
+      <div className="container dark">
+        <div class="app">
+          <Header />
+          <Routes>
+            <Route path="/" element={<NotesPage />} />
+            <Route path="/note/:id" element={<NotePage />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
