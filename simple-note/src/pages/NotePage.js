@@ -11,8 +11,12 @@ function NotePage() {
   let note = notes.find(note => note.id === noteId)
 
   return (
-    <div>
-        <p>{note?.body}</p>
+    <div className="note">
+        <div className="note-header">
+
+        </div>
+
+        <textarea value={note?.body}></textarea>
     </div>
   )
 }
