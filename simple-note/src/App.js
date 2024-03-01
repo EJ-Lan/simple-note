@@ -1,17 +1,28 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import React from 'react';
+
 import Header from './components/Header';
-import Body from './components/Body'
-import Footer from './components/Footer'
+import NotesPage from './pages/NotesPage';
+import NotePage from './pages/NotePage';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-header">
+    <Router>
+      <div className="App">
         <Header />
-        <Body />
-        <Footer />
+        <Routes>
+          <Route path="/" element={<NotesPage />} />
+          <Route path="/note/:id" element={<NotePage />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 
