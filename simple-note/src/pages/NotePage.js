@@ -8,16 +8,16 @@ const Note = () => {
     const noteId = id;
     const [note, setNote] = useState(null);
 
-    useEffect(() => {
-        getNote();
-    }, [noteId, getNote]);
-
     const getNote = useCallback(async () => {
         if (noteId === 'new') return;
         let response = await fetch(`http://127.0.0.1:5000/notes/${noteId}`);
         let data = await response.json();
         setNote(data);
     }, [noteId]);
+
+    useEffect(() => {
+        getNote();
+    }, [noteId, getNote]);
 
     const createNote = async () => {
         await fetch(`http://127.0.0.1:5000/notes/`, {
