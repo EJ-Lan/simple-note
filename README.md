@@ -43,7 +43,7 @@ To run the application, you need to start both the React development server and 
    ```sh
    npm start
    ```
-   This runs the app in development mode. Open [http://localhost:3000] to view it in your browser.
+   This runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Accessing the App Online
-Prefer to see it in action online? Visit [https://subtle-lamington-4af54c.netlify.app] to access the deployed application. but you must still use `npm run server` to start the mock database and REST API.
+Prefer to see it in action online? Visit [https://subtle-lamington-4af54c.netlify.app](https://subtle-lamington-4af54c.netlify.app) to access the deployed application. but you must still use `npm run server` to start the mock database and REST API.
