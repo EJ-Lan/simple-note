@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div className="container dark">
-        <div class="app">
+        <div className="app">
           <Header />
           <Routes>
             <Route path="/" element={<NotesPage />} />
